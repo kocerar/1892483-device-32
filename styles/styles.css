@@ -39,7 +39,7 @@
 }
 
 body {
-  font-family: "Rubik" "Arial", sans-serif;
+  font-family: "Rubik Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: black;
@@ -49,15 +49,35 @@ body {
 /* Pages */
 
 .page-header {
+  margin-top: 16px;
+  padding-bottom: 16px;
   color: #000000;
   background-color: #FFE17F;
 }
 
-.navigation-link-top {
+.logo {
+margin-bottom: 64px;
+}
+
+.navigation-list-top {
   font-family: "Rubik", sans-serif; 
   line-height: 16px;
   font-weight: 400;
   text-align: center;
+  display: grid;
+  grid-template-columns: 0.5fr 0.25fr 0.125fr 0.125fr;
+  color: #000000;
+  background-color: #FFE17F;
+  text-decoration: none;
+  text-transform: uppercase; 
+}
+.navigation-list {
+  font-family: "Rubik", sans-serif; 
+  line-height: 16px;
+  font-weight: 400;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 0.5fr 0.175fr 0.175fr 0.15fr;
   color: #000000;
   background-color: #FFE17F;
   text-decoration: none;
@@ -75,6 +95,40 @@ body {
   text-transform: uppercase; 
 }
 
+.categories {
+  margin-left: 140px;
+  margin-right: 140px;
+}
+
+.categories-title {
+  background-color: #FFE17F;
+  padding: 15%
+}
+
+.categories-list {
+  margin-left: 0px;
+  margin-right: 0px;
+  font-family:'Raleway', sans-serif;
+  text-decoration: none;
+  color: black;
+  text-align: left;
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0px;
+  padding-right: 10px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.feauters {
+  align-content: center;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+}
+
 /* Style the tab */
 .tab {
   font-family: "Rubik", sans-serif;
@@ -83,7 +137,6 @@ body {
   text-transform: uppercase; 
   float: left;
   background-color: #f1f1f1;
-  width: 30%;
   height: 388px;
 }
 /* Style the buttons that are used to open the tab content */
@@ -111,16 +164,140 @@ body {
 .tabcontent {
   float: left;
   padding: 0px 12px;
-  width: 40%;
   height: 388px;
 }
 
-.categories-title {
-  background: #FFE17F;
-  padding: 1%
+/* Доставка */
+.delivery-about {
+  background-color: lightgray;
+  margin-left: 140px;
+  margin-right: 140px;
+  font-family:'Rubik', sans-serif;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 140px;
+  margin-bottom: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.info-list {
+  margin-left: 140px;
+  margin-right: 140px;
+  font-size: 18px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 20px;
+}
+
+.info-list h2 {
+  font-weight: 800;
+font-size: 50px;
+}
+
+.subscribe {
+  background-color: lightgray;
+  font-size: 18px;
+}
+
+.subscribe h2 {
+  font-size: 50px;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.subscribe-top {
+  padding-top: 50px;
+  margin-left: 140px;
+  margin-right: 140px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 20px;
+}
+
+.subscribe-bot {
+  margin-left: 140px;
+  margin-right: 140px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 20px;
 }
 
 .page-footer {
   background-color: #444444;
   color: white;
+}
+.logo-footer{
+  padding-top: 40px;
+  padding-left: 140px;
+}
+
+.footer-list {
+  font-size: 16px;
+  margin-left: 140px;
+  margin-right: 140px;
+  display: grid;
+  grid-template-columns: 0.25fr 0.1fr 0.1fr 0.1fr 0.25fr;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0px;
+  padding-right: 10px;
+  list-style-type: none;
+}
+
+.navigation-link-footer {
+  font-family: "Rubik", sans-serif; 
+  font-weight: 700;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase; 
+}
+
+.footer-social-list {
+  font-size: 16px;
+  margin-left: 140px;
+  margin-right: 140px;
+  display: grid;
+  grid-template-columns: 1fr 0.15fr 0.15fr 1fr 0.2fr;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0px;
+  text-align: left;
+  list-style-type: none;
+}
+
+/* Breadcrumbs */
+.breadcrumbs {
+  color: #242424;
+}
+
+/* Link */
+.breadcrumbs-link {
+  color: inherit;
+}
+
+/* Title */
+.catalog-filter-title {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #242424;
+  text-transform: uppercase;
+}
+
+/* Label */
+.control-label {
+  font-weight: 700;
 }

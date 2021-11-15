@@ -9,12 +9,14 @@
 
 <body>
   <header class="page-header">
-    <a class="logo"><img src="img/device-logo.svg" height="145" width="36" alt="Логотип Магазина «Девайс»"></a>
+    <a class="logo"><img src="img/device-logo.svg" height="36" width="145" alt="Логотип Магазина «Девайс»"></a>
     <nav class="navigation">
-      <label class="search-global">
+      <ul class="navigation-list-top">
+        <li class="navigation-link-top">
+        <label class="search-global">
         <input type="search" placeholder="Поиск">
       </label>
-      <ul class="navigation-list">
+      </li>
         <li class="navigation-item">
           <a class="navigation-link-top" href="#">Войти</a>
         </li>
@@ -25,8 +27,9 @@
           <a class="navigation-link-top" href="#">Корзина</a>
         </li>
       </ul>
-      <ul class="navigation-list navigation-user">
+      <ul class="navigation-list">
         <li class="navigation-item">
+        <ul class="navigation-user">
           <a class="navigation-link" href="catalog.html">Каталог товаров</a>
         </li>
         <li class="categories-item">
@@ -47,8 +50,7 @@
         <li>
           <a class="navigation-link" href="">Квадрокоптеры</a>
         </li>
-      </ul>
-      <ul>
+        </ul>
         <li class="navigation-item">
           <a class="navigation-link" href="delivery.html">Доставка</a>
         </li>
@@ -96,47 +98,47 @@
       <ul class="categories-list">
         <li class="categories-item">
           <a class="categories-link" href="">
-            <img class="categories-title" src="img/popular-1.svg" width="64px" height="64px" alt="Очки виртуальной реальности">
+            <img class="categories-title" src="img/popular-1.svg" width="100px" height="100px" alt="Очки виртуальной реальности">
           </a>
           <span class="categories-list">Виртуальная реальность</span>
         </li>
         <li class="categories-item">
           <a class="categories-link" href="">
-            <img class="categories-title" src="img/popular-2.svg" width="64px" height="64px" alt="Монопод">
+            <img class="categories-title" src="img/popular-2.svg" width="100px" height="100px" alt="Монопод">
           </a>
           <span class="categories-list">Моноподы для селфи</span>
         </li>
         <li class="categories-item">
           <a class="categories-link" href="">
-            <img class="categories-title" src="img/popular-3.svg" width="64px" height="64px" alt="Камера">
+            <img class="categories-title" src="img/popular-3.svg" width="100px" height="100px" alt="Камера">
           </a>
           <span class="categories-list">Экшн камеры</span>
         </li>
         <li class="categories-item">
           <a class="categories-link" href="">
-            <img class="categories-title" src="img/popular-4.svg" width="64px" height="64px" alt="Фитнес-браслет">
+            <img class="categories-title" src="img/popular-4.svg" width="100px" height="100px" alt="Фитнес-браслет">
           </a>
           <span class="categories-list">Фитнес-браслеты</span>
         </li>
         <li class="categories-item">
           <a class="categories-link" href="">
-            <img class="categories-title" src="img/popular-5.svg" width="64px" height="64px" alt="Часы">
+            <img class="categories-title" src="img/popular-5.svg" width="100px" height="100px" alt="Часы">
           </a>
           <span class="categories-list">Умные часы</span>
         </li>
         <li class="categories-item">
           <a class="categories-link" href="">
-            <img class="categories-title" src="img/popular-6.svg" width="64px" height="64px" alt="Квадрокоптер">
+            <img class="categories-title" src="img/popular-6.svg" width="100px" height="100px" alt="Квадрокоптер">
           </a>
           <span class="categories-list">Квадрокоптеры</span>
         </li>
       </ul>
     </section>
-    <nav>
+    <nav class="feauters">
       <div class="tab">
-        <button class="tablinks tab1" onclick="openTab(event, 'delivery')">Доставка</button>
-        <button class="tablinks tab2" onclick="openTab(event, 'guarantee')">Гарантия</button>
-        <button class="tablinks tab3" onclick="openTab(event, 'credit')">Кредит</button>
+        <button class="tablinks" onclick="openTab(event, 'delivery')">Доставка</button>
+        <button class="tablinks" onclick="openTab(event, 'guarantee')">Гарантия</button>
+        <button class="tablinks" onclick="openTab(event, 'credit')">Кредит</button>
       </div>
 
       <div id="delivery" class="tabcontent">
@@ -175,9 +177,12 @@
           document.getElementById(delivery).style.display = "block";
           evt.currentTarget.className += " active";
         }
-        </script>
-      <a href="#"><b>Доставим редкий товар под заказ</b></a>
-      <section class="about">
+      </script>
+      </nav>
+        <a href="#"><b class="delivery-about">Доставим редкий товар под заказ</b></a>
+      <section class="info">
+        <ul class="info-list">
+          <li class="info-tab">
         <h2 class="contacts-title">О нас</h2>
         <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
           Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
@@ -187,8 +192,8 @@
           <li>ТоксБерри</li>
         </ul>
         <a class="button button-feedback" href="#">Подробнее о нас</a>
-      </section>
-      <section class="contacts">
+      </li>
+      <li class="info-tab">
         <h2 class="contacts-title">Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис.
           Заодно сможете проверить работоспособность покупки.</p>
@@ -201,42 +206,50 @@
         <ul class="contacts-schedule">
           <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
           <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
-        </ul>
         <a class="button button-feedback" href="#">Напишите нам</a>
+      </li>
+      </ul>
       </section>
       <section class="subscribe">
-        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-        <p class="subscribe-info">Еженедельный дайджест с обзорами новинок,
-          длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
-        <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-          <p class="subscribe-form-email">
-            <label class="form-label" for="subscribe-email">
-            </label>
-            <input class="field" type="text" id="subscribe-email" name="subscribe-email" placeholder="Ваш email">
-          </p>
-          <button class="button" type="submit">Записаться</button>
-          <p>Это бесплатно</p>
+        <ul class="subscribe-top">
+        <li class="subscribe-top-list"><h2 class="subscribe-title">Подпишитесь на рассылку</h2></li>
+        <li class="subscribe-top-list"><p class="subscribe-info">Еженедельный дайджест с обзорами новинок,
+          длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p></li>
+        </ul>
+        <ul class="subscribe-bot">
+          <li class="subscribe-bot-list"><form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="subscribe-form-email">
+              <label class="form-label" for="subscribe-email">
+              </label>
+              <input class="field" type="text" id="subscribe-email" name="subscribe-email" placeholder="Ваш email">
+            </p>
+          </li>
+          <li class="subscribe-bot-list"><button class="button" type="submit"><b>Подписаться</b></button></li>
+          <li class="subscribe-bot-list"><p>Это бесплатно</p></li>
         </form>
+      </ul>
       </section>
   </main>
   
   <footer class="page-footer">
-    <img class="logo" src="img/device-logo-footer.svg" width="145" height="36" alt="Логотип Магазина «Девайс»">
-    <p>Санкт-Петербург, набережная
-      реки Карповки, 5, литера П.</p>
-    <ul>
+    <img class="logo-footer" src="img/device-logo-footer.svg" width="145" height="36" alt="Логотип Магазина «Девайс»">
+    <ul class="footer-list">
+    <li class="navigation-item"><p>Санкт-Петербург, набережная
+      реки Карповки, 5, литера П.</p></li>
       <li class="navigation-item">
-        <a class="navigation-link" href="delivery.html">Доставка</a>
+        <a class="navigation-link-footer" href="delivery.html"><p>Доставка</p></a>
       </li>
       <li class="navigation-item">
-        <a class="navigation-link" href="guarantee.html">Гарантия</a>
+        <a class="navigation-link-footer" href="guarantee.html"><p>Гарантия</p></a>
       </li>
       <li class="navigation-item">
-        <a class="navigation-link" href="contact.html">Контакты</a>
+        <a class="navigation-link-footer" href="contact.html"><p>Контакты</p></a>
       </li>
+      <li class="navigation-item"><p>Тел.: +7 (812) 812-12-12</p></li>
     </ul>
-    <p>Тел.: +7 (812) 812-12-12</p>
     <ul class="footer-social-list">
+      <li class="footer-social-item">
+          <img src="img/divider-yellow.jpg" alt="" height="8px">
       <li class="footer-social-item">
         <a class="button" href="https://facebook.com/htmlacademy">
           <img src="img/facebook.png" alt="Фейсбук" height="40px">
@@ -252,8 +265,12 @@
           <img src="img/twitter.png" alt="Твиттер" height="40px">
         </a>
       </li>
+      <li class="footer-social-item">
+        <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+          <img class="logo" src="img/htmlacademy.png" height="34" width="115" alt="Логотип HTML Academy">
+        </a>
+      </li>
     </ul>
-    <a class="htmlacademy-link" href="https://htmlacademy.ru/"><img class="logo" src="img/htmlacademy.png" height="34" width="115" alt="Логотип HTML Academy"></a>
   </footer>
 </body>
 
