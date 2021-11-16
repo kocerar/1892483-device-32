@@ -29,28 +29,8 @@
       </ul>
       <ul class="navigation-list">
         <li class="navigation-item">
-        <ul class="navigation-user">
-          <a class="navigation-link" href="catalog.html">Каталог товаров</a>
-        </li>
-        <li class="categories-item">
-          <a class="navigation-link" href="">Виртуальная реальность</a>
-        </li>
-        <li>
-          <a class="navigation-link" href=""> Моноподы для селфи</a>
-        </li>
-        <li>
-          <a class="navigation-link" href="">Экшн камеры</a>
-        </li>
-        <li>
-          <a class="navigation-link" href="">Фитнес-браслеты</a>
-        </li>
-        <li>
-          <a class="navigation-link" href="">Умные часы</a>
-        </li>
-        <li>
-          <a class="navigation-link" href="">Квадрокоптеры</a>
-        </li>
-        </ul>
+          <a class="catalog-link navigation-link" href="catalog.html">Каталог товаров</a>
+          </li>
         <li class="navigation-item">
           <a class="navigation-link" href="delivery.html">Доставка</a>
         </li>
@@ -67,8 +47,12 @@
   <main class="main-index">
     <h1 class="visually-hidden">Магазин гаджетов «Девайс»</h1>
     <section class="top-seller">
-      <h2 class="top-seller-title">Топ продаж</h2>
+      <h2 class="top-seller-title visually-hidden">Топ продаж</h2>
       <img class="slider-image" src="img/slider-1.png" width="560" height="560" alt="Лучшие товары">
+      <b>Порхает как бабочка,
+        жалит как пчела!</b>
+        <p>Этот обычный, на первый взгляд, квадрокоптер оснащён мощным лазером, замаскированным под стандартную камеру.
+        </p>
       <button class="slider-button slider-prev" type="button">
         <span class="visually-hidden">Предыдущее фото</span>
       </button>
@@ -179,10 +163,15 @@
         }
       </script>
       </nav>
-        <a href="#"><b class="delivery-about">Доставим редкий товар под заказ</b></a>
+        <div class="delivery delivery-box">
+              <img class="delivery-icon" src="../1892483-device-32/img/Доставка.jpg" height="100" width="125">
+              <a class="delivery-info" href="#"><b class="delivery-about">Доставим редкий товар под заказ</b></a>
+              <img class="delivery-info-icon" src="img/Инфо.png" height="40" width="40">
+        </div>
       <section class="info">
         <ul class="info-list">
           <li class="info-tab">
+            <img src="../1892483-device-32/img/divider.jpg" height="7" width="80">
         <h2 class="contacts-title">О нас</h2>
         <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
           Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
@@ -194,6 +183,7 @@
         <a class="button button-feedback" href="#">Подробнее о нас</a>
       </li>
       <li class="info-tab">
+        <img src="../1892483-device-32/img/divider.jpg" height="7" width="80">
         <h2 class="contacts-title">Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис.
           Заодно сможете проверить работоспособность покупки.</p>
@@ -245,7 +235,7 @@
       <li class="navigation-item">
         <a class="navigation-link-footer" href="contact.html"><p>Контакты</p></a>
       </li>
-      <li class="navigation-item"><p>Тел.: +7 (812) 812-12-12</p></li>
+      <li class="navigation-item"><p class="footer-phone-number">Тел.: +7 (812) 812-12-12</p></li>
     </ul>
     <ul class="footer-social-list">
       <li class="footer-social-item">
