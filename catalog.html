@@ -8,59 +8,41 @@
 </head>
 
 <body>
-    <header class="page-header">
-        <a class="logo"><img src="img/device-logo.svg" height="145" width="36" alt="Логотип Магазина «Девайс»"></a>
-        <nav class="navigation">
-          <label class="search-global">
-            <input type="search" placeholder="Поиск">
-          </label>
-          <ul class="navigation-list">
-            <li class="navigation-item">
-              <a class="navigation-link-top" href="#">Войти</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link-top" href="#">Сравнить</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link-top" href="#">Корзина</a>
-            </li>
-          </ul>
-          <ul class="navigation-list navigation-user">
-            <li class="navigation-item">
-              <a class="navigation-link" href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="categories-item">
-              <a class="navigation-link" href="">Виртуальная реальность</a>
-            </li>
-            <li>
-              <a class="navigation-link" href=""> Моноподы для селфи</a>
-            </li>
-            <li>
-              <a class="navigation-link" href="">Экшн камеры</a>
-            </li>
-            <li>
-              <a class="navigation-link" href="">Фитнес-браслеты</a>
-            </li>
-            <li>
-              <a class="navigation-link" href="">Умные часы</a>
-            </li>
-            <li>
-              <a class="navigation-link" href="">Квадрокоптеры</a>
-            </li>
-          </ul>
-          <ul>
-            <li class="navigation-item">
-              <a class="navigation-link" href="delivery.html">Доставка</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="guarantee.html">Гарантия</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="contact.html">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+  <header class="page-header">
+    <a class="logo"><img src="img/device-logo.svg" height="36" width="145" alt="Логотип Магазина «Девайс»"></a>
+    <nav class="navigation">
+      <ul class="navigation-list-top">
+        <li class="navigation-link-top">
+        <label class="search-global">
+        <input type="search" placeholder="Поиск">
+      </label>
+      </li>
+        <li class="navigation-item">
+          <a class="navigation-link-top" href="#">Войти</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link-top" href="#">Сравнить</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link-top" href="#">Корзина</a>
+        </li>
+      </ul>
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a class="catalog-link navigation-link" href="catalog.html">Каталог товаров</a>
+          </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="delivery.html">Доставка</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="guarantee.html">Гарантия</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="contact.html">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
     <main class="main-inner">
         <nav class="inner-nav">
@@ -241,40 +223,47 @@
     </main>
 
     <footer class="page-footer">
-        <img class="logo" src="img/device-logo-footer.svg" width="145" height="36" alt="Логотип Магазина «Девайс»">
-        <p>Санкт-Петербург, набережная
-          реки Карповки, 5, литера П.</p>
-        <ul>
-          <li class="navigation-item">
-            <a class="navigation-link" href="delivery.html">Доставка</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="guarantee.html">Гарантия</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="contact.html">Контакты</a>
-          </li>
-        </ul>
-        <p>Тел.: +7 (812) 812-12-12</p>
-        <ul class="footer-social-list">
-          <li class="footer-social-item">
-            <a class="button" href="https://facebook.com/htmlacademy">
-              <img src="img/facebook.png" alt="Фейсбук" height="40px" width="40px">
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="button" href="https://instagram.com/htmlacademy">
-              <img src="img/instagram.png" alt="Инстаграм" height="40px" width="40px">
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="button" href="https://twitter.com/htmlacademy_ru">
-              <img src="img/twitter.png" alt="Твиттер" height="40px" width="40px">
-            </a>
-          </li>
-        </ul>
-        <a class="htmlacademy-link" href="https://htmlacademy.ru/"><img class="logo" src="img/htmlacademy.png" height="34" width="115" alt="Логотип HTML Academy"></a>
-      </footer>
+      <img class="logo-footer" src="img/device-logo-footer.svg" width="145" height="36" alt="Логотип Магазина «Девайс»">
+      <ul class="footer-list">
+      <li class="navigation-item"><p>Санкт-Петербург, набережная
+        реки Карповки, 5, литера П.</p></li>
+        <li class="navigation-item">
+          <a class="navigation-link-footer" href="delivery.html"><p>Доставка</p></a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link-footer" href="guarantee.html"><p>Гарантия</p></a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link-footer" href="contact.html"><p>Контакты</p></a>
+        </li>
+        <li class="navigation-item"><p class="footer-phone-number">Тел.: +7 (812) 812-12-12</p></li>
+      </ul>
+      <ul class="footer-social-list">
+        <li class="footer-social-item">
+            <img src="img/divider-yellow.jpg" alt="" height="8px">
+        <li class="footer-social-item">
+          <a class="button" href="https://facebook.com/htmlacademy">
+            <img src="img/facebook.png" alt="Фейсбук" height="40px">
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="button" href="https://instagram.com/htmlacademy">
+            <img src="img/instagram.png" alt="Инстаграм" height="40px">
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="button" href="https://twitter.com/htmlacademy_ru">
+            <img src="img/twitter.png" alt="Твиттер" height="40px">
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+            <img class="logo" src="img/htmlacademy.png" height="34" width="115" alt="Логотип HTML Academy">
+          </a>
+        </li>
+      </ul>
+    </footer>
+    
 </body>
 
 </html>
