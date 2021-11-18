@@ -8,29 +8,33 @@
 </head>
 
 <body>
-  <header class="page-header">
-    <a class="logo"><img src="img/device-logo.svg" height="36" width="145" alt="Логотип Магазина «Девайс»"></a>
+
+  <header class="page-header container">
     <nav class="navigation">
-      <ul class="navigation-list-top">
-        <li class="navigation-link-top">
+      <div class="nav-box"> 
+        <div class="logo-wrapper">
+          <a class="logo">
+            <img src="img/device-logo.svg" height="36" width="145" alt="Логотип Магазина «Девайс»">
+          </a>
+        </div>
         <label class="search-global">
-        <input type="search" placeholder="Поиск">
-      </label>
-      </li>
+          <input type="search" placeholder="Поиск">
+        </label>
+        <a class="catalog-link" href="catalog.html">Каталог товаров</a>
+        </div>  
+        <div class="nav-box">
+      <ul class="navigation-list navigation-list-top">
         <li class="navigation-item">
-          <a class="navigation-link-top" href="#">Войти</a>
+          <a class="navigation-link" href="#">Войти</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link-top" href="#">Сравнить</a>
+          <a class="navigation-link" href="#">Сравнить</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link-top" href="#">Корзина</a>
+          <a class="navigation-link" href="#">Корзина</a>
         </li>
       </ul>
       <ul class="navigation-list">
-        <li class="navigation-item">
-          <a class="catalog-link navigation-link" href="catalog.html">Каталог товаров</a>
-          </li>
         <li class="navigation-item">
           <a class="navigation-link" href="delivery.html">Доставка</a>
         </li>
@@ -41,10 +45,11 @@
           <a class="navigation-link" href="contact.html">Контакты</a>
         </li>
       </ul>
+      </div>
     </nav>
   </header>
 
-  <main class="main-index">
+  <main class="main-index container">
     <h1 class="visually-hidden">Магазин гаджетов «Девайс»</h1>
     <section class="top-seller">
       <h2 class="top-seller-title visually-hidden">Топ продаж</h2>
@@ -221,9 +226,9 @@
       </section>
   </main>
   
-  <footer class="page-footer">
+  <footer class="page-footer container">
     <img class="logo-footer" src="img/device-logo-footer.svg" width="145" height="36" alt="Логотип Магазина «Девайс»">
-    <ul class="footer-list">
+    <ul class="footer-list footer-list-top">
     <li class="navigation-item"><p>Санкт-Петербург, набережная
       реки Карповки, 5, литера П.</p></li>
       <li class="navigation-item">
@@ -237,7 +242,7 @@
       </li>
       <li class="navigation-item"><p class="footer-phone-number">Тел.: +7 (812) 812-12-12</p></li>
     </ul>
-    <ul class="footer-social-list">
+    <ul class="footer-social-list footer-list">
       <li class="footer-social-item">
           <img src="img/divider-yellow.jpg" alt="" height="8px">
       <li class="footer-social-item">

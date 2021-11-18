@@ -39,71 +39,78 @@
 }
 
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "Rubik Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: black;
   --main-bg-color: white;
+  
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* Pages */
-
-.page-header {
+.container {
+  margin-left: auto; 
+  margin-right: auto; 
   width: 1160px;
-  height: 323px;
-  margin-left: 80px;
-  margin-right: 80px;
-  margin-top: 16px;
-  padding-bottom: 16px;
-  color: #000000;
-  background-color: #FFE17F;
 }
 
-.logo {
-  display: grid;
-  grid-template-columns: 1fr;
+.logo-wrapper {
+  grid-column: 1 / - 1;
+}
+
+.navigation {
+  display: flex;
+  width: 1160px;
   margin: 0 auto;
-  margin-bottom: 0px;
 }
 
-.navigation-list-top {
-  text-align: center;
-  display: grid;
-  grid-template-columns: 0.5fr 0.25fr 0.125fr 0.11fr;
-  list-style-type: none;
-}
-
-.navigation-link-top {
-  font-family: "Rubik", sans-serif; 
-  line-height: 16px;
-  font-weight: 700;
-  color: #000000;
-  text-decoration: none;
-  text-transform: uppercase;
-  text-decoration-style: none;
+.nav-box {
+  width: 516px;
+  margin: 0;
+  padding: 0;
 }
 
 .navigation-list {
-  font-family: "Rubik", sans-serif; 
-  line-height: 16px;
-  font-weight: 400;
-  text-align: center;
-  display: grid;
-  grid-template-columns: 0.5fr 0.175fr 0.175fr 0.15fr;
-  color: #000000;
-  text-decoration: none;
-  text-transform: uppercase; 
+  display: flex;
+  flex-wrap: wrap; 
+  width: 516px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
   list-style-type: none;
 }
 
 .navigation-link {
-  font-family: "Rubik", sans-serif; 
+  font-family: "Raleway", sans-serif;
+  display: block;
+  padding: 24px 19px;
   line-height: 22px;
   font-weight: 700;
   text-align: center;
   color: #000000;
   text-decoration: none;
-  text-transform: uppercase; 
+  text-transform: uppercase;
+  
+}
+
+.page-header {
+  background-color: #FFE17F;
 }
 
 .categories {
@@ -113,25 +120,22 @@ body {
 
 .categories-title {
   background-color: #FFE17F;
-  padding: 15%
+  padding: 10px;
 }
 
 .categories-list {
-  margin-left: 0px;
-  margin-right: 0px;
+  margin: 0px;
+  padding: 0px;
   font-family:'Raleway', sans-serif;
   text-decoration: none;
   color: black;
   text-align: left;
   list-style-type: none;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0px;
-  padding-right: 10px;
-  padding-top: 40px;
-  padding-bottom: 40px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 40px;
+  grid-template-columns: repeat(6, 1fr);
+  display: flex;
+  justify-content: space-between;
 }
 
 .feauters {
@@ -237,7 +241,8 @@ padding-right: 220px;
   margin-right: 140px;
   font-size: 18px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40px;
   margin-top: 0;
   margin-bottom: 0;
   padding: 20px;
@@ -282,25 +287,32 @@ font-size: 50px;
 }
 /* footer */
 .page-footer {
+  width: 1440px;
+  height: 321px;
+  padding-left: 300px;
   background-color: #444444;
   color: white;
 }
 .logo-footer{
+  display: grid;
+  grid-column: 1 / - 1;
   padding-top: 40px;
-  padding-left: 140px;
+  padding-left: 0px;
 }
 
 .footer-list {
-  font-size: 16px;
-  margin-left: 140px;
-  margin-right: 140px;
-  display: grid;
-  grid-template-columns: 0.31fr 0.125fr 0.125fr 0.125fr 0.4fr;
-  margin-top: 0;
-  margin-bottom: 0;
+  font-family: "Rubik", sans-serif; 
+  font-weight: 400;
+  display: flex;
+  flex-wrap: wrap; 
+  width: 1160px;
+  margin: 0;
+  padding-top: 40px;
   padding-left: 0px;
-  text-align: left;
+  justify-content: space-between;
   list-style-type: none;
+  font-size: 16px;
+  text-align: center;
 }
 
 .navigation-link-footer {
@@ -312,34 +324,15 @@ font-size: 50px;
   text-transform: uppercase;
 }
 
-.navigation-link-footer p {
-  vertical-align: top;
-  padding-left: 10px;
-  padding-right: 0px;
-}
-
 .footer-phone-number {
   font-family: "Rubik", sans-serif; 
   font-weight: 700;
-  text-align: right;
+ 
   color: white;
   text-decoration: none;
   text-transform: uppercase; 
   padding-left: 100px;
   padding-right: 0px;
-}
-
-.footer-social-list {
-  font-size: 16px;
-  margin-left: 140px;
-  margin-right: 140px;
-  display: grid;
-  grid-template-columns: 1fr 0.15fr 0.15fr 1fr 0.2fr;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0px;
-  text-align: left;
-  list-style-type: none;
 }
 
 /* Breadcrumbs */
