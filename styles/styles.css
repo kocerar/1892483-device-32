@@ -247,10 +247,30 @@ padding-right: 220px;
   padding: 20px;
 }
 
+.button-feed {
+  padding-top: 50px;
+}
+
 .info-list h2 {
   font-weight: 800;
 font-size: 50px;
 }
+
+.delivery-list {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.delivery-list li {
+  list-style-type:disc;
+  color: #FFE17F;
+}
+
+.delivery-list li span{
+  color: black;
+}
+
+
 /* subscribe */
 .subscribe {
   background-color: lightgray;
