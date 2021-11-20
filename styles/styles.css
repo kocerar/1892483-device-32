@@ -245,6 +245,7 @@ padding-right: 220px;
   margin-top: 0;
   margin-bottom: 0;
   padding: 20px;
+  list-style-type: none;
 }
 
 .button-feed {
@@ -293,6 +294,17 @@ font-size: 50px;
   margin-top: 0;
   margin-bottom: 0;
   padding: 20px;
+  list-style-type: none;
+}
+
+.subscribe-info {
+  padding-top: 50px;
+}
+
+.subscribe-button {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 20px;
 }
 
 .subscribe-bot {
@@ -303,6 +315,7 @@ font-size: 50px;
   margin-top: 0;
   margin-bottom: 0;
   padding: 20px;
+  list-style-type: none;
 }
 /* footer */
 .page-footer {
