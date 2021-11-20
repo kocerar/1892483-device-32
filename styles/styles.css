@@ -71,10 +71,13 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 1160px;
+  height: 300px;
   margin: 0 auto;
 }
 
 .nav-box {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
   width: 516px;
   margin: 0;
   padding: 0;
@@ -85,11 +88,20 @@ body {
 }
 
 input[type=search]{
+  border-style: hidden;
   width: 516px;
   background-color: #FFE17F;
 }
 .catalog-button {
-  padding-top: 20px;
+  padding-top: 50px;
+}
+
+.catalog-link{
+font-family: "Raleway", sans-serif;
+font-size: 18px;
+color: black;
+text-decoration: none;
+text-transform: uppercase;
 }
 
 .navigation-list {
