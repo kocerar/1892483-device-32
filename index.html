@@ -57,11 +57,17 @@
     <h1 class="visually-hidden">Магазин гаджетов «Девайс»</h1>
     <section class="top-seller">
       <h2 class="top-seller-title visually-hidden">Топ продаж</h2>
-      <img class="slider-image" src="img/slider-1.png" width="560" height="560" alt="Лучшие товары">
+      <div class="top-seller-box">
+      <div class="img-box">
+        <img class="slider-image" src="img/slider-1.png" width="560" height="560" alt="Лучшие товары">
+      </div>
+      <div class="img-info-box">
       <b>Порхает как бабочка,
         жалит как пчела!</b>
         <p>Этот обычный, на первый взгляд, квадрокоптер оснащён мощным лазером, замаскированным под стандартную камеру.
         </p>
+        </div>
+      </div>
       <button class="slider-button slider-prev" type="button">
         <span class="visually-hidden">Предыдущее фото</span>
       </button>
@@ -217,7 +223,8 @@
       </ul>
       </div>
       </section>
-      <section class="subscribe container">
+      <section class="subscribe">
+        <div class="container">
         <ul class="subscribe-top">
         <li class="subscribe-top-list"><h2 class="subscribe-title">Подпишитесь на рассылку</h2></li>
         <li class="subscribe-top-list"><p class="subscribe-info">Еженедельный дайджест с обзорами новинок,
@@ -239,12 +246,14 @@
           <li class="subscribe-bot-list"><p>Это бесплатно</p></li>
         </form>
       </ul>
+      </div>
       </section>
   </main>
   
-  <footer class="page-footer container">
+  <footer class="page-footer">
+    <div class="container">
     <img class="logo-footer" src="img/device-logo-footer.svg" width="145" height="36" alt="Логотип Магазина «Девайс»">
-    <div class="footer-list footer-list-top">
+    <ul class="footer-list footer-list-top">
     <li class="navigation-item"><p>Санкт-Петербург, набережная
       реки Карповки, 5, литера П.</p></li>
       <li class="navigation-item">
@@ -282,6 +291,7 @@
         </a>
       </li>
     </ul>
+  </div>
   </footer>
 </body>
 
