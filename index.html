@@ -9,18 +9,22 @@
 
 <body>
 
-  <header class="page-header container">
-    <nav class="navigation">
+  <header class="page-header">
+    <nav class="navigation container">
+      <div class="logo-wrapper">
+        <a class="logo">
+          <img src="img/device-logo.svg" height="36" width="145" alt="Логотип Магазина «Девайс»">
+        </a>
+      </div>
       <div class="nav-box"> 
-        <div class="logo-wrapper">
-          <a class="logo">
-            <img src="img/device-logo.svg" height="36" width="145" alt="Логотип Магазина «Девайс»">
-          </a>
-        </div>
+        <div class="search-box">
         <label class="search-global">
           <input type="search" placeholder="Поиск">
         </label>
-        <a class="catalog-link" href="catalog.html">Каталог товаров</a>
+        </div>
+        <div class="catalog-button">
+          <a class="catalog-link" href="catalog.html">Каталог товаров</a>
+        </div>
         </div>  
         <div class="nav-box">
       <ul class="navigation-list navigation-list-top">
@@ -82,7 +86,7 @@
         </li>
       </ol>
     </section>
-    <section class="categories">
+    <section class="categories container">
       <h2 class="visually-hidden">Категории товаров</h2>
       <ul class="categories-list">
         <li class="categories-item">
@@ -123,7 +127,7 @@
         </li>
       </ul>
     </section>
-    <nav class="feauters">
+    <nav class="feauters container">
       <div class="tab">
         <button class="tablinks" onclick="openTab(event, 'delivery')">Доставка</button>
         <button class="tablinks" onclick="openTab(event, 'guarantee')">Гарантия</button>
@@ -168,12 +172,12 @@
         }
       </script>
       </nav>
-        <div class="delivery delivery-box">
+        <div class="delivery delivery-box container">
               <img class="delivery-icon" src="../1892483-device-32/img/Доставка.jpg" height="100" width="125">
               <a class="delivery-info" href="#"><b class="delivery-about">Доставим редкий товар под заказ</b></a>
               <img class="delivery-info-icon" src="img/Инфо.png" height="40" width="40">
         </div>
-      <section class="info">
+      <section class="info container">
         <ul class="info-list">
           <li class="info-tab">
             <img src="../1892483-device-32/img/divider.jpg" height="7" width="80">
@@ -205,7 +209,7 @@
       </li>
       </ul>
       </section>
-      <section class="subscribe">
+      <section class="subscribe container">
         <ul class="subscribe-top">
         <li class="subscribe-top-list"><h2 class="subscribe-title">Подпишитесь на рассылку</h2></li>
         <li class="subscribe-top-list"><p class="subscribe-info">Еженедельный дайджест с обзорами новинок,
@@ -228,7 +232,7 @@
   
   <footer class="page-footer container">
     <img class="logo-footer" src="img/device-logo-footer.svg" width="145" height="36" alt="Логотип Магазина «Девайс»">
-    <ul class="footer-list footer-list-top">
+    <div class="footer-list footer-list-top">
     <li class="navigation-item"><p>Санкт-Петербург, набережная
       реки Карповки, 5, литера П.</p></li>
       <li class="navigation-item">
