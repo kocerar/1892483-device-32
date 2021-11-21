@@ -16,28 +16,13 @@
           <img src="img/device-logo.svg" height="36" width="145" alt="Логотип Магазина «Девайс»">
         </a>
       </div>
-      <div class="nav-box"> 
+      <div class="nav-box">
         <div class="search-box">
-        <label class="search-global">
-          <input type="search" placeholder="Поиск по сайту">
-        </label>
+          <label class="search-global">
+            <input type="search" placeholder="Поиск">
+          </label>
         </div>
-        <div class="catalog-button">
-          <a class="catalog-link" href="catalog.html">Каталог товаров</a>
-        </div>
-        </div>  
-        <div class="nav-box">
-      <ul class="navigation-list navigation-list-top">
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">Войти</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">Сравнить</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">Корзина</a>
-        </li>
-      </ul>
+      </div>
       <ul class="navigation-list">
         <li class="navigation-item">
           <a class="navigation-link" href="delivery.html">Доставка</a>
@@ -49,11 +34,33 @@
           <a class="navigation-link" href="contact.html">Контакты</a>
         </li>
       </ul>
+      <div class="catalog-button">
+        <a class="catalog-link" href="catalog.html">Каталог товаров</a>
+        <ul>
+          <li>
+            <a href="#">
+              Виртуальная реальность
+            </a>
+          </li>
+        </ul>
       </div>
+      <ul class="navigation-list navigation-list-top">
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">Войти</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">Сравнить</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">Корзина</a>
+        </li>
+      </ul>
     </nav>
   </header>
+  
 
-  <main class="main-index container">
+  <main class="main-index">
+    <div class="container">
     <h1 class="visually-hidden">Магазин гаджетов «Девайс»</h1>
     <section class="top-seller">
       <h2 class="top-seller-title visually-hidden">Топ продаж</h2>
@@ -102,7 +109,7 @@
     </section>
     <section class="categories container">
       <h2 class="visually-hidden">Категории товаров</h2>
-      <ul class="categories-list">
+      <ul class="categories-list" style="padding-left: 0;">
         <li class="categories-item">
           <a class="categories-link" href="">
             <img class="categories-title" src="img/popular-1.svg" width="100px" height="100px" alt="Очки виртуальной реальности">
@@ -192,9 +199,8 @@
               <img class="delivery-info-icon" src="img/Инфо.png" height="40" width="40">
         </div>
       <section class="info container">
-        <ul class="info-list">
+        <div class="info-list">
           <div class="info-box">
-          <li class="info-tab">
             <img src="../1892483-device-32/img/divider.jpg" height="7" width="80">
         <h2 class="contacts-title">О нас</h2>
         <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
@@ -206,10 +212,9 @@
             <li><span>ТоксБерри</span></li>
           </ul>
         </div>
-        <div class="button-feed">
-        <a class="button button-feedback" href="#">Подробнее о нас</a>
+        <div class="button-about">
+          <a class="button-about-box" href="#">Подробнее о нас</a>
         </div>
-      </li>
       </div>
       <div class="about-box">
       <li class="info-tab">
@@ -228,23 +233,23 @@
           <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
         <a class="button button-feedback" href="#">Напишите нам</a>
       </li>
-      </ul>
-      </div>
+    </div>
       </section>
+    </div>
       <section class="subscribe">
         <div class="container">
-        <ul class="subscribe-top">
-        <li class="subscribe-top-list"><h2 class="subscribe-title">Подпишитесь на рассылку</h2></li>
-        <li class="subscribe-top-list"><p class="subscribe-info">Еженедельный дайджест с обзорами новинок,
+          <ul class="subscribe-top">
+            <li class="subscribe-top-list"><h2 class="subscribe-title">Подпишитесь на рассылку</h2></li>
+            <li class="subscribe-top-list"><p class="subscribe-info">Еженедельный дайджест с обзорами новинок,
           длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p></li>
-        </ul>
-        <ul class="subscribe-bot">
-          <li class="subscribe-bot-list"><form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-            <p class="subscribe-form-email">
-              <label class="form-label" for="subscribe-email">
-              </label>
+          </ul>
+          <ul class="subscribe-bot">
+            <li class="subscribe-bot-list"><form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+              <p class="subscribe-form-email">
+                <label class="form-label" for="subscribe-email">
+                </label>
               <input class="field" type="text" id="subscribe-email" name="subscribe-email" placeholder="Ваш email">
-            </p>
+              </p>
           </li>
           <li class="subscribe-bot-list">
             <div class="subscribe-button">
@@ -259,47 +264,49 @@
   </main>
   
   <footer class="page-footer">
-    <div class="container">
-    <img class="logo-footer" src="img/device-logo-footer.svg" width="145" height="36" alt="Логотип Магазина «Девайс»">
-    <ul class="footer-list footer-list-top">
-    <li class="navigation-item"><p>Санкт-Петербург, набережная
-      реки Карповки, 5, литера П.</p></li>
-      <li class="navigation-item">
-        <a class="navigation-link-footer" href="delivery.html"><p>Доставка</p></a>
-      </li>
-      <li class="navigation-item">
-        <a class="navigation-link-footer" href="guarantee.html"><p>Гарантия</p></a>
-      </li>
-      <li class="navigation-item">
-        <a class="navigation-link-footer" href="contact.html"><p>Контакты</p></a>
-      </li>
-      <li class="navigation-item"><p class="footer-phone-number">Тел.: +7 (812) 812-12-12</p></li>
-    </ul>
-    <ul class="footer-social-list footer-list">
-      <li class="footer-social-item">
-          <img src="img/divider-yellow.jpg" alt="" height="8px">
-      <li class="footer-social-item">
-        <a class="button" href="https://facebook.com/htmlacademy">
-          <img src="img/facebook.png" alt="Фейсбук" height="40px">
-        </a>
-      </li>
-      <li class="footer-social-item">
-        <a class="button" href="https://instagram.com/htmlacademy">
-          <img src="img/instagram.png" alt="Инстаграм" height="40px">
-        </a>
-      </li>
-      <li class="footer-social-item">
-        <a class="button" href="https://twitter.com/htmlacademy_ru">
-          <img src="img/twitter.png" alt="Твиттер" height="40px">
-        </a>
-      </li>
-      <li class="footer-social-item">
-        <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-          <img class="logo" src="img/htmlacademy.png" height="34" width="115" alt="Логотип HTML Academy">
-        </a>
-      </li>
-    </ul>
-  </div>
+    <div class="container" style="
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      row-gap: 40px;">
+      <img class="logo-footer" src="img/device-logo-footer.svg" width="145" height="36" alt="Логотип Магазина «Девайс»">
+      <p>
+        Санкт-Петербург, набережная
+        реки Карповки, 5, литера П.
+      </p>
+      <ul class="footer-list footer-list-top">
+        <li class="navigation-item">
+          <a class="navigation-link-footer" href="delivery.html"><p>Доставка</p></a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link-footer" href="guarantee.html"><p>Гарантия</p></a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link-footer" href="contact.html"><p>Контакты</p></a>
+        </li>
+      </ul>
+      <a href="#" class="footer-phone-number"><p>Тел.: +7 (812) 812-12-12</p></a>
+      <img class="divider" src="img/divider-yellow.jpg" alt="" height="7" width="80">
+      <ul class="footer-social-list footer-list">
+        <li class="footer-social-item ">
+          <a class="button" href="https://facebook.com/htmlacademy">
+            <img src="img/facebook.png" alt="Фейсбук" height="40" width="40">
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="button" href="https://instagram.com/htmlacademy">
+            <img src="img/instagram.png" alt="Инстаграм" height="40" width="40">
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="button" href="https://twitter.com/htmlacademy_ru">
+            <img src="img/twitter.png" alt="Твиттер" height="40" width="40">
+          </a>
+        </li>
+      </ul>
+      <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+        <img class="logo" src="img/htmlacademy.png" height="34" width="115" alt="Логотип HTML Academy">
+      </a>
+    </div>
   </footer>
 </body>
 
