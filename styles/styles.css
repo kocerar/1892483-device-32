@@ -407,6 +407,13 @@ font-size: 50px;
   background-color: #444444;
   color: white;
 }
+
+footer .container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  row-gap: 40px;
+}
+
 .logo-footer{
   display: grid;
   grid-column: 1 / -1;
