@@ -82,6 +82,7 @@ body {
   width: 516px;
   margin: 0;
   padding: 0;
+  
 }
 
 .search-box {
@@ -414,21 +415,21 @@ font-size: 50px;
 }
 
 .footer-list {
-  margin-top: 0px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns:  repeat(3, 1fr);
   column-gap: 10px;
   text-align: center;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 24px;
+  gap: 20px; 
+  align-self: center;
+  justify-self: center;
 }
 
-.footer-list-top {
-  padding-left: 30px;
-  width: 484px;
-}
 
 .navigation-link-footer {
-  width: 148px;
   color: white;
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
@@ -438,9 +439,7 @@ font-size: 50px;
 }
 
 .footer-social-list {
-  width: 140px;
-  text-decoration: none;
-  padding-left: 200px;
+  padding-bottom: 10px;
 }
 
 .navigation-item {
