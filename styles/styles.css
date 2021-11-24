@@ -407,6 +407,13 @@ font-size: 50px;
   background-color: #444444;
   color: white;
 }
+
+footer .container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  row-gap: 40px;
+}
+
 .logo-footer{
   display: grid;
   grid-column: 1 / -1;
@@ -466,11 +473,26 @@ font-size: 50px;
 
 /* Breadcrumbs */
 .breadcrumbs {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
   display: flex;
+  gap: 5px;
   margin: 0;
-  padding: 0; 
+  margin-bottom: 50px;
+  padding: 0;
   color: #242424;
   list-style-type: none;
+}
+
+.inner-nav-box {
+  padding-left: 50px; 
+}
+
+.inner-nav-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
 }
 
 /* Link */
@@ -487,6 +509,32 @@ font-size: 50px;
   text-transform: uppercase;
 }
 
+.content-header {
+  display: grid;
+  grid-template-columns: 328px 1fr;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: justify;
+}
+
+.catalog-filter-name {
+  padding-left: 60px;
+  background-color: #E5E5E5; 
+}
+
+.sorting-box {
+  padding-left: 70px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: #EBEBEB;
+}
+
+.sorting-type {
+  margin: 16px 0;
+}
+
 /* Label */
 .control-label {
   font-weight: 700;
@@ -498,10 +546,6 @@ font-size: 50px;
   width: 1160px;
 }
 
-.main-inner {
-  padding-top: 40px;
-}
-
 /* inner */
 .content-box {
   display: flex;
@@ -509,75 +553,118 @@ font-size: 50px;
 
 .catalog-filter-box {
   display: flex;
-  width: 220px;
-  margin-right: 20px;
+  background-color: #EBEBEB;
+  width: 328px;
+  padding-top: 70px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.catalog-filter-group {
+  padding-left: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+  border-style: solid;
+  border-color: black;
+}
+
+.catalog-filter-title{
+  margin-top: 0;
+  text-transform: unset;
+}
+
+.catalog-filter-list {
+  list-style-type: none;
+  padding-left: 0;
 }
 
 .catalog-right-column {
-  width: 700px;
-  margin: 0 auto;
-}
-
-.sorting-type {
-  margin-right: auto;
-}
-
-.product-list {
-  list-style-type: none;
+  width: 832px;
   margin: 0;
-  padding: 0;
 }
 
 .pagination-container {
-  display: flex;
-  padding: 16px; 
   background-color: #FFFFFF;
+  padding-left: 70px;
+  padding-bottom: 70px;
+}
+
+.pagination-box {
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+  padding: 0px;
+  height: 70px;
+  width: 760px;
+  background-color: #EBEBEB;
+}
+
+.pagination-link {
+  font-family: "Rubik", sans-serif;
+  line-height: 16px;
+  font-weight: 700;
+  color: black;
+  text-transform: uppercase;
+  display: inline-block;
+  box-sizing: border-box;
+  height: 70px;
+  padding: 25px 10px;
+  background-color: #EBEBEB;
+  text-decoration: none;
+  text-align: center;
 }
 
 .pagination {
-  display: flex;
+  display: grid;
+  grid-template-columns:  repeat(5, 1fr);
+  column-gap: 5px;
+  text-align: center;
+  list-style-type: none;
   margin: 0;
   padding: 0;
-  list-style-type: none;
+  align-self: center;
+  justify-self: center;
+}
+
+.pagination-link.pagination-page {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #444444;
+}
+
+.pagination-show-more {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  border-style: solid;
+  height: 55px;
+  width: 760px;
 }
 
 /* Item */
 
-.pagination-item:not(:last-child) {
-  margin-right: 8px;
-}
-
-.pagination-link {
-  display: block;
-  box-sizing: border-box;
-  width: 50px;
-  height: 44px;
-  padding: 14px 20px;
-  line-height: 16px;
-  font-weight: 700;
-  color: #FFFFFF;
-  background-color: #000000;
-  text-decoration: none;
-}
-
 /* Show more */
-.pagination-show-more {
-  margin-left: auto;
+.pagination-show-more-box {
+  display: flex;
+  margin-left: 0;
+  padding-left: 0;
+  padding-bottom: 50px;
+  align-items: center;
+  justify-content:end;
 }
 
 .product-list {
   display: grid;
-  grid-template-columns: 360px 360px; 
+  grid-template-columns: 360px 360px;
   list-style-type: none;
-  margin: 0;
   padding: 0;
   margin-bottom: 24px;
-  gap: 20px; 
+  gap: 40px;
+  list-style-type: none;
+  margin-top: 70px;
+  padding-left: 70px;
 }
 
 /* Item */
-.product-card {
-  background-color: #FFFFFF;
-  width: 220px;
-  margin-bottom: 20px;
-}
+
