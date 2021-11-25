@@ -11,7 +11,7 @@
   <header class="page-header">
     <nav class="navigation container">
       <div class="logo-wrapper">
-        <a class="logo">
+        <a class="logo" href="../1892483-device-32/index.html"> 
           <img src="img/device-logo.svg" height="36" width="145" alt="Логотип Магазина «Девайс»">
         </a>
       </div>
@@ -139,20 +139,28 @@
               <fieldset class="catalog-filter-group catalog-price">
                 <legend class="catalog-filter-title visually-hidden">Стоимость</legend>
                 <h3 class="catalog-filter-title">Стоимость</h3>
-                <button class="range-toggle toggle-min" type="button">
-                  <span class="visually-hidden">Изменить минимальную цену.</span>
-                </button>
-                <button class="range-toggle toggle-max" type="button">
-                  <span class="visually-hidden">Изменить максимальную цену.</span>
-                </button>
 
-                <label class="catalog-filter-label">
-                  от <input class="catalog-filter-input catalog-filter-item" type="number" name="min-price"> 0
-                </label>
-
-                <label class="catalog-filter-label">
-                  до <input class="catalog-filter-input catalog-filter-item" type="number" name="max-price"> 5000
-                </label>
+                <div class="range">
+                  <div class="range-scale">
+                    <div class="range-bar" style="left: 42px; width: 136px">
+                      <button class="range-toggle toggle-min">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-toggle toggle-max">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
+                  </div>
+  
+                  <div class="range-wrapper-inputs">
+                    <label class="catalog-filter-label">
+                      от <input class="range-input" type="number" value="0" name="min-price"> ₽
+                    </label>
+                    <label class="catalog-filter-label">
+                      до <input class="range-input" type="number" value="5000" name="max-price" style="width: 40px"> ₽
+                    </label>
+                  </div>
+                </div>
 
               </fieldset>
 
@@ -162,35 +170,35 @@
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="Black">
+                      <input class="control-input visually-hidden" type="checkbox" name="Black">
                       <span class="control-mark"></span>
                       <span class="control-label">Черный</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="White" checked>
+                      <input class="control-input visually-hidden" type="checkbox" name="White" checked>
                       <span class="control-mark"></span>
                       <span class="control-label">Белый</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="Blue" checked>
+                      <input class="control-input visually-hidden" type="checkbox" name="Blue" checked>
                       <span class="control-mark"></span>
                       <span class="control-label">Синий</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="Red">
+                      <input class="control-input visually-hidden" type="checkbox" name="Red">
                       <span class="control-mark"></span>
                       <span class="control-label">Красный</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="Pink">
+                      <input class="control-input visually-hidden" type="checkbox" name="Pink">
                       <span class="control-mark"></span>
                       <span class="control-label">Розовый</span>
                     </label>
@@ -204,14 +212,14 @@
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="product-group" value="yes">
+                      <input class="control-input visually-hidden" type="radio" name="product-group" value="yes">
                       <span class="control-mark"></span>
                       <span class="control-label">Есть</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="product-group" value="no" checked>
+                      <input class="control-input visually-hidden" type="radio" name="product-group" value="no" checked>
                       <span class="control-mark"></span>
                       <span class="control-label">Нет</span>
                     </label>
@@ -219,7 +227,7 @@
                 </ul>
               </fieldset>
 
-              <button class="button" type="submit">Показать</button>
+              <button class="button button-show" type="submit"><img src="../1892483-device-32/img/show.png" height="20" width="200"></button>
           </div>
           </form>
 

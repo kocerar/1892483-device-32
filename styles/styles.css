@@ -117,6 +117,7 @@ input[type=search] {
 .catalog-button {
   justify-content: center;
   align-items: center;
+  padding-bottom: 30px;
 }
 
 .popover {
@@ -404,25 +405,118 @@ input[type=search] {
   grid-template-columns: repeat(6, 1fr);
 }
 
+
+/* new tab*/
+/*
+.tabs {
+  display: flex;
+  flex-direction: column;
+}
+
+.tabs__links {
+  display: flex;
+  flex-direction: row;
+  order: 0;
+  white-space: nowrap;
+  margin-bottom: 15px;
+  background-color: #fff;
+  border: 0;
+}
+
+.tabs__links>a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  padding: 6px 10px;
+  text-align: center;
+}
+
+.tabs__links>a:hover {
+  background-color: rgba(227, 242, 253, 0.3);
+}
+
+.tabs>#content-1:target~.tabs__links>a[href="#content-1"],
+.tabs>#content-2:target~.tabs__links>a[href="#content-2"],
+.tabs>#content-3:target~.tabs__links>a[href="#content-3"] {
+  background-color: white;
+  cursor: default;
+}
+
+.tabs>div:not(.tabs__links) {
+  display: none;
+  order: 1;
+  flex-grow: 1;
+}
+
+@media (min-width: 200px) {
+  .tabs {
+    flex-direction: row;
+  }
+
+  .tabs__links {
+    flex-direction: column;
+    border: none;
+    box-shadow: none;
+  }
+
+  .tabs__links>a {
+    border: 0;
+    margin-bottom: 8px;
+  }
+
+  .tabs__links>a:last-child {
+    margin-bottom: 0;
+  }
+
+  .tabs>div:not(.tabs__links) {
+    padding-left: 15px;
+  }
+}
+
+.tabs>div:target {
+  display: block;
+}
+
+*/
+/* Style the tab */
 .feauters {
   align-content: center;
   display: grid;
-  grid-template-columns: 200px 1fr;
+  grid-template-columns: 280px 1fr 140px;
+  padding-bottom: 100px;
 }
 
-/* Style the tab */
+.delivery-img {
+  padding: 0;
+  padding-top: 50px;
+  align-content: center;
+  justify-content: center;
+}
+
 .tab {
-  font-family: "Rubik", sans-serif;
+  border: 0;
+  border-right: solid;
+  border-color: black;
+  border-width: 5px;
+  float: left;
+  background-color: var(--main-bg-color);
+  height: 288px;
+  padding-top: 100px;
+}
+
+.tablinks {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
   font-size: 18px;
   line-height: 21px;
   text-transform: uppercase;
-  float: left;
-  background-color: var(--main-bg-color);
-  height: 388px;
 }
 
 /* Style the buttons that are used to open the tab content */
 .tab button {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
   display: block;
   background-color: inherit;
   color: black;
@@ -442,14 +536,34 @@ input[type=search] {
 
 /* Create an active/current "tab button" class */
 .tab button.active {
-  background-color: #ccc;
+  background-color: black;
+  color: #FFE17F;
 }
 
 /* Style the tab content */
 .tabcontent {
   float: left;
-  padding: 0px 12px;
-  height: 388px;
+  padding: 0px;
+  padding-top: 50px;
+  padding-left: 50px;
+  height: 288px;
+}
+
+.tabcontent h3{
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 1.2;
+  padding: 0;
+  margin: 0;
+}
+
+.tabcontent p{
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+  padding-right: 50px;
 }
 
 /* Delivery */
@@ -821,6 +935,172 @@ footer .container {
   margin-bottom: 22px;
 }
 
+.range-scale {
+  position: relative;
+  height: 4px;
+  margin-bottom: 16px;
+  background-color: #444444;
+  border-radius: 2px;
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: black;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: #FFFFFF;
+  border: 2px solid #242424;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background-color: #FFFFFF;
+}
+
+.range-toggle:active,
+.range-toggle:focus {
+  outline: 3px solid #FFFFFF;
+} 
+
+.toggle-min {
+  top: -7px;
+  left: -10px;
+}
+
+.toggle-max {
+  top: -7px;
+  right: -10px;
+}
+
+.range-wrapper-inputs {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.catalog-filter-label {
+  display: flex;
+  margin-right: 5px;
+}
+
+.range-input {
+  width: 30px;
+  padding: 0 2px;
+  font: inherit;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  appearance: textfield;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.control {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+/* Mark */
+.control-mark {
+  border-radius: 20%;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #242424;
+}
+
+.control:hover .control-mark {
+  border-color: black;
+}
+
+.control-input:disabled + .control-mark {
+  border-color: black;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before {
+  position: absolute;
+  top: 9px;
+  left: 2px;
+  width: 6px;
+  height: 2px;
+  background-color: black;
+  content: "";
+}
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  position: absolute;
+  top: 7px;
+  left: 4px;
+  width: 12px;
+  height: 2px;
+  background-color: black;
+  content: "";
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before {
+  transform: rotate(45deg);
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  transform: rotate(-65deg);
+  
+}
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  background-color: #242424;
+  border-radius: 50%;
+  content: "";
+}
+
+.control-label {
+  line-height: 22px;
+  font-weight: 700;
+}
+
+.select-control {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  width: 100%;
+  height: 20px;
+  padding: 0;
+  background-color: #EBEBEB;
+  border: 0;
+  background-image: url("../img/dropdown1.png");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  appearance: none;
+}
+
+.select-control:hover,
+.select-control:focus {
+  border-color: #EBEBEB;
+}
+
+.select-control:focus {
+  outline: 2px solid #EBEBEB;
+}
 
 .catalog-filter-group {
   font-family: "Rubik", sans-serif;
@@ -829,12 +1109,20 @@ footer .container {
   text-transform: initial;
   width: 200px;
   margin: 0;
-  padding-left: 0;
   padding: 0;
+  padding-top: 20px;
   border: 0;
   border-top: inset;
   border-style: solid;
   border-color: black;
+}
+
+.button-show {
+  width: 200px;
+  height: 20px;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
 }
 
 .catalog-filter-label {
