@@ -35,14 +35,48 @@
         </li>
       </ul>
       <div class="catalog-button">
+        <div class="catalog-link-list">
         <a class="catalog-link" href="catalog.html">Каталог товаров</a>
-        <ul>
-          <li>
-            <a href="#">
-              Виртуальная реальность
-            </a>
-          </li>
-        </ul>
+        <button class="popover-close-button button button-light popover-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        </div>
+        <div class="popover popover-catalog">
+          <div class="popover-content">
+            <ul class="popover-item-list">
+              <li class="popover-item">
+                <a href="#">
+                  Виртуальная реальность
+                </a>
+              </li>
+              <li class="popover-item">
+                <a href="#">
+                  Моноподы для селфи
+                </a>
+              </li>
+              <li class="popover-item">
+                <a href="#">
+                  Экшн камеры
+                </a>
+              </li>
+              <li class="popover-item">
+                <a href="#">
+                  Фитнес-браслеты
+                </a>
+              </li>
+              <li class="popover-item">
+                <a href="#">
+                  Умные часы
+                </a>
+              </li>
+              <li class="popover-item">
+                <a href="#">
+                  Квадрокоптеры
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
       <ul class="navigation-list">
         <li class="navigation-item">
@@ -66,7 +100,19 @@
         <h2 class="top-seller-title visually-hidden">Топ продаж</h2>
         <div class="top-seller-box">
           <div class="img-box">
+            <div class="slider">
+              <div class="slider-wrapper">
             <img class="slider-image" src="img/slider-1.png" width="560" height="560" alt="Лучшие товары">
+                <div class="slider-controls">
+            <button class="slider-button slider-prev" type="button">
+              <span class="visually-hidden">Предыдущее фото</span>
+            </button>
+            <button class="slider-button slider-next" type="button">
+              <span class="visually-hidden">Следующее фото</span>
+            </button>
+          </div>
+              </div>
+            </div>
           </div>
           <div class="img-info-box">
             <b>Порхает как бабочка,
@@ -102,12 +148,6 @@
             </div>
           </div>
         </div>
-        <button class="slider-button slider-prev" type="button">
-          <span class="visually-hidden">Предыдущее фото</span>
-        </button>
-        <button class="slider-button slider-next" type="button">
-          <span class="visually-hidden">Следующее фото</span>
-        </button>
       </section>
       <section class="categories container">
         <h2 class="visually-hidden">Категории товаров</h2>
